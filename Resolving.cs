@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InjectDemo
+namespace InDependency
 {
-    public abstract class Resolving<T>
+    public abstract class Dependency<T>
     {
         private static Func<T> activator;
 
@@ -12,7 +12,7 @@ namespace InjectDemo
 
         protected T implementation;
 
-        public Resolving()
+        public Dependency()
         {
             implementation = activator();
         }
@@ -24,7 +24,7 @@ namespace InjectDemo
 
         public static void Is(Func<T> activator)
         {
-            Resolving<T>.activator = activator;
+            Dependency<T>.activator = activator;
             constant = activator();
         }
     }
