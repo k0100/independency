@@ -1,0 +1,10 @@
+C:\Work\InDependency\Sample\obj\Debug\Sample.csproj.CoreCompileInputs.cache
+C:\Work\InDependency\Sample\obj\Debug\Sample.csprojAssemblyReference.cache
+C:\Work\InDependency\Sample\bin\Debug\Sample.exe.config
+C:\Work\InDependency\Sample\bin\Debug\Sample.exe
+C:\Work\InDependency\Sample\bin\Debug\Sample.pdb
+C:\Work\InDependency\Sample\bin\Debug\InDependency.dll
+C:\Work\InDependency\Sample\bin\Debug\InDependency.pdb
+C:\Work\InDependency\Sample\obj\Debug\Sample.csproj.CopyComplete
+C:\Work\InDependency\Sample\obj\Debug\Sample.exe
+C:\Work\InDependency\Sample\obj\Debug\Sample.pdb
