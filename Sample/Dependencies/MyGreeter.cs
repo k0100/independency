@@ -8,9 +8,20 @@ namespace Sample.Dependencies
 {
     class MyGreeter : IGreeter
     {
-        public string GetMessage()
+        public MyGreeter() : this("World")
         {
-            return "Hello, world!";
+        }
+
+        public MyGreeter(string name)
+        {
+            Name = name;
+        }
+
+        public string Name { get; }
+
+        public string Greet()
+        {
+            return $"Hello, {Name}!";
         }
     }
 }

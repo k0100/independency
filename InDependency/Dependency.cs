@@ -4,26 +4,18 @@ namespace InDependency
 {
     public abstract class Dependency<T>
     {
-        private static Func<T> activator;
-
-        private static T constant;
+        private static Func<object[], T> activator;
 
         protected T implementation;
 
-        public Dependency()
+        public Dependency(params object[] args)
         {
-            implementation = activator();
+            implementation = activator(args);
         }
 
-        public static T Constant()
-        {
-            return constant;
-        }
-
-        public static void Is(Func<T> activator)
+        public static void Is(Func<object[], T> activator)
         {
             Dependency<T>.activator = activator;
-            constant = activator();
         }
     }
 }

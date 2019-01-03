@@ -8,6 +8,6 @@ namespace Sample.Dependencies
 {
     interface IGreeter
     {
-        string GetMessage();
+        string Greet();
     }
 }

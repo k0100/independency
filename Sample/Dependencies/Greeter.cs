@@ -9,9 +9,17 @@ namespace Sample.Dependencies
 {
     class Greeter : Dependency<IGreeter>, IGreeter
     {
-        public string GetMessage()
+        public Greeter()
         {
-            return implementation.GetMessage();
+        }
+
+        public Greeter(string name) : base(name)
+        {
+        }
+
+        public string Greet()
+        {
+            return implementation.Greet();
         }
     }
 }
